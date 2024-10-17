@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Window</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    
+
+    <!--FONT LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="homepage.js"></script>
+    <script src="window.js"></script>
+    <script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+  </head>
+  <body onload="loadWindow()">
+    <nav>
+      <a href="index.html" class="homenav">Home</a>
+      <a href="page2.html" aria-current="page">Window</a>
+    </nav>
+    <main>
+      <h1><center>Window</center></h1>
+      <center>
+        <div class="dWindow">
+          <div class="dInner">
+            <div>
+              <h4>X-Min</h4>
+              <textarea rows="1" id="xmin">-8</textarea>
+            </div>
+            <div>
+              <h4>X-Max</h4>
+              <textarea rows="1" id="xmax">8</textarea>
+            </div>
+          </div>
+          <div class="dInner">
+            <div>
+              <h4>Y-Min</h4>
+              <textarea rows="1" id="ymin">-8</textarea>
+            </div>
+            <div>
+              <h4>Y-Max</h4>
+              <textarea rows="1" id="ymax">8</textarea>
+            </div>
+          </div>
+          <div class="dInner">
+            <div>
+              <h4>Z-Min</h4>
+              <textarea rows="1" id="zmin">-8</textarea>
+            </div>
+            <div>
+              <h4>Z-Max</h4>
+              <textarea rows="1" id="zmax">8</textarea>
+            </div>
+          </div>
+        </div>
+      </center>
+      <div class="buttons-container">
+        <button
+          onclick="resetWindow()"
+          class="button-arounder"
+          style="margin-right: 30px; background: rgb(191, 49, 49)"
+        >
+          RESET
+        </button>
+        <button
+          onclick="saveWindow()"
+          class="button-arounder"
+          style="background: rgb(45, 149, 150)"
+        >
+          SAVE
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
